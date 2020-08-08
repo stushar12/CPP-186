@@ -25,7 +25,7 @@ def binarySearch():
     max=-1
     while lower <= upper: 
   
-        mid = (upper+lower) // 2; 
+        mid = lower + (upper - lower) // 2; 
         if (check(mid)): 
             if(mid>max):
                 max=mid
