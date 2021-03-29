@@ -8,11 +8,12 @@ int32_t main()
    cin>>x; 
    while(x--)
    {
-        int n,c;
+        int n,c;                                 //n = number of stalls
+                                                //c = number of cows 
         cin>>n>>c;
         int a[n];                               
 
-        for(int i=0;i<n;i++)                                        //location of stalls
+        for(int i=0;i<n;i++)                    //location of stalls
         cin>>a[i];
 
         sort(a,a+n);
@@ -20,7 +21,7 @@ int32_t main()
         int lowerbound = 1;
         int upperbound = 1e9;                   //10^9
         int ans = 0;
-
+    
         while(lowerbound<=upperbound)
         {
             int mid = (lowerbound+upperbound)/2;
@@ -49,5 +50,3 @@ int32_t main()
         cout<<ans<<endl;
     }
 }
-
-
